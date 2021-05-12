@@ -1,0 +1,61 @@
+<div class="d-flex" style="margin-left: 18px;">
+    <button class="btn align-items-center" [routerLink]="['/']">Home</button>
+    <p style="margin-top: 15px;">></p>
+    <button class="btn align-items-center" [routerLink]="['/caballeros']">Caballeros</button>
+    <p style="margin-top: 15px;">></p>
+    <button  class="btn align-items-center" disabled>Busqueda avanzada</button>
+</div>
+
+<div class="jumbotron">
+    <p>Sección de busqueda avanzada</p>
+
+</div>
+
+<div class="card text-center">
+    <div class="card-header">
+    Ingresa el nombre y presiona el boton Buscar:
+    </div>
+    <div class="card-body">
+            <div class="form-group row">
+              <label for="type" class="col-sm-2 col-form-label">Tipo:</label>
+              <div class="col-sm-10">
+                <input type="text"  class="form-control" id="type" placeholder="Oro" autocomplete="off" required [(ngModel)]="campobuscado" name="campobuscado/">
+              </div>
+            </div>          
+            <button (click)="BuscarCaballero()" class="btn btn-primary">Buscar</button>
+    </div>
+
+</div>
+
+<div *ngIf="(caballerosFiltados.length>0)">
+  <div class="card text-center">
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="show" *ngFor="let caballeros of caballerosFiltados" [ngClass]="caballeros.type==='Oro' ? 'oro':'' " >
+              <td class="show"><button class="removeDecoration" [routerLink]='["/caballeros/"+caballeros.id]'>{{caballeros.id}}</button></td>
+              <td>{{caballeros.name}} de {{caballeros.constellation}}</td>
+              <td  [ngStyle]="{'font-weight': caballeros.type==='Oro' ? 'bold':'normal'}">{{caballeros.type | uppercase}}</td>
+          </tr>
+        </tbody>  
+      </table>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="notfound">
+  <div class="card text-center">
+    <div class="card-body">
+      <p>No se encontraron Caballeros en la Lista...</p>
+      <br>
+      <p>Ayuda: Intenta con los nombres: Bronce, Plata, Oro...</p>
+    </div>
+  </div>
+</div>

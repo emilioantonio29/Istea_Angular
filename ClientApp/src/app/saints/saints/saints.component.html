@@ -1,0 +1,44 @@
+<div class="d-flex" style="margin-left: 18px;">
+    <button class="btn align-items-center" [routerLink]="['/']">Home</button>
+    <p style="margin-top: 15px;">></p>
+    <button class="btn align-items-center" [routerLink]="['/caballeros']">Caballeros</button>
+</div>
+<div class="jumbotron">
+    <p>Lista de Caballeros del Zodiaco</p>
+    <br>
+    <p>Haciendo Click sobre el ID puede ir a verificar el detalle...</p>
+</div>
+
+
+<div *ngIf="(ListadoCaballeros.length>0)">
+  <div class="card text-center">
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="show" *ngFor="let caballeros of ListadoCaballeros" [ngClass]="caballeros.type==='Oro' ? 'oro':'' " >
+              <td class="show"><button class="removeDecoration" [routerLink]='["/caballeros/"+caballeros.id]'>{{caballeros.id}}</button></td>
+              <td>{{caballeros.name}} de {{caballeros.constellation}}</td>
+              <td  [ngStyle]="{'font-weight': caballeros.type==='Oro' ? 'bold':'normal'}">{{caballeros.type | uppercase}}</td>
+          </tr>
+        </tbody>  
+      </table>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(ListadoCaballeros.length<1)">
+  <div class="card text-center">
+    <div class="card-body">
+      <p>No se encontraron Caballeros en la Lista...</p>
+      <br>
+      <button class="btn btn-primary align-items-center" [routerLink]="['/caballeros-crear']">Ingresar nuevos Caballeros</button>
+    </div>
+  </div>
+</div>

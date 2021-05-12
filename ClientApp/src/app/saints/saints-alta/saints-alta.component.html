@@ -1,0 +1,63 @@
+<div class="d-flex" style="margin-left: 18px;">
+    <button class="btn align-items-center" [routerLink]="['/']">Home</button>
+    <p style="margin-top: 15px;">></p>
+    <button class="btn align-items-center" [routerLink]="['/caballeros']">Caballeros</button>
+    <p style="margin-top: 15px;">></p>
+    <button  class="btn align-items-center" disabled>Crear nuevo Caballero</button>
+</div>
+
+<div class="jumbotron">
+    <p>Formulario para registrar nuevos Caballeros del Zodiaco</p>
+
+</div>
+
+<div class="card text-center">
+    <div class="card-header">
+    Crear nuevo Caballero:
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formCaballero" (ngSubmit)="GuardarCaballero()" autocomplete="off">
+            <div class="form-group row">
+              <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
+              <div class="col-sm-10">
+                <input type="text"  class="form-control" id="name" placeholder="Seiya" formControlName="name" autocomplete="off" required >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="type" class="col-sm-2 col-form-label">Tipo:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="type" placeholder="Bronce" formControlName="type" required>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="constellation" class="col-sm-2 col-form-label">Constelación:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="constellation" placeholder="Pegaso" formControlName="constellation" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="saga" class="col-sm-2 col-form-label">Saga:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="saga" placeholder="12 casas" formControlName="saga" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="armor" class="col-sm-2 col-form-label">Armadura:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="armor" placeholder="Armadura de Pegaso" formControlName="armor" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="thumbnail" class="col-sm-2 col-form-label">URL imagen:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="thumbnail" placeholder="https://loscaballerosdelzodiaco.000webhostapp.com/imagenes/seiya3.png" formControlName="thumbnail" required>
+                </div>
+            </div>
+            
+            <button type="submit" [disabled]="!formCaballero.valid" class="btn btn-primary">Guardar</button>
+            
+        </form>
+    </div>
+
+</div>
+

@@ -1,0 +1,32 @@
+
+.bronce{
+    background-color: rgb(207, 205, 189);
+}
+.oro{
+    background-color: rgb(240, 223, 126);
+}
+.asgard{
+    background-color: lightblue;
+}
+
+.removeDecoration{
+    text-decoration: none;
+    background-color: transparent !important;
+    font: inherit;
+    color: inherit;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.removeDecoration:hover{
+    color: blue;
+}
+
+.hide{
+    visibility: hidden
+}
+.show:hover > .hide {
+    visibility: visible !important;
+}
+
