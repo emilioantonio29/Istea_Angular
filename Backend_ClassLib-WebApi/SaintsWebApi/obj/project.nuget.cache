@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aak2EtPdxAA7P3FVWoFKaMvgeF+5WT76rBNcXVRKSBpiweEJ0f9JsJvkbElwFja6sc7IkjzMjqB3RpCbvD/alA==",
+  "dgSpecHash": "KvD2a2HuOcHpJM2S9ikhvhJ7iXtpTQFaDQvmjpqnLUprV9ucvOQKMVzZUqguN4mjaycoaQ3PrunXcu3l/6ytCQ==",
   "success": true,
-  "projectFilePath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj",
+  "projectFilePath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emili\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

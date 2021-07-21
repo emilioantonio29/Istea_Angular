@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj": {}
+    "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj": {}
   },
   "projects": {
-    "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj": {
+    "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
+        "projectUniqueName": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
         "projectName": "SaintsClassLib",
-        "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
+        "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
         "packagesPath": "C:\\Users\\Emili\\.nuget\\packages\\",
-        "outputPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\obj\\",
+        "outputPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj": {
+    "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj",
+        "projectUniqueName": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj",
         "projectName": "SaintsWebApi",
-        "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj",
+        "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsWebApi\\SaintsWebApi.csproj",
         "packagesPath": "C:\\Users\\Emili\\.nuget\\packages\\",
-        "outputPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsWebApi\\obj\\",
+        "outputPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -106,8 +106,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj": {
-                "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj"
+              "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj": {
+                "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj"
               }
             }
           }

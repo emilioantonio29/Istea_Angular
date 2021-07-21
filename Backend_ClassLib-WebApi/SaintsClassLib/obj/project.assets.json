@@ -7118,11 +7118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
+      "projectUniqueName": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
       "projectName": "SaintsClassLib",
-      "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
+      "projectPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\SaintsClassLib.csproj",
       "packagesPath": "C:\\Users\\Emili\\.nuget\\packages\\",
-      "outputPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\Backend_ClassLib-WebApi\\SaintsClassLib\\obj\\",
+      "outputPath": "D:\\web\\ISTEA\\1C\\3.-programacionWebAngular\\parcial1F\\DesarrolloWeb\\Backend_ClassLib-WebApi\\SaintsClassLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
