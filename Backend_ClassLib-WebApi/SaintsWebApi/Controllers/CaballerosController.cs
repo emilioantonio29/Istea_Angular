@@ -53,11 +53,11 @@ namespace SaintsWebApi.Controllers
         [HttpGet("cadena")]
         public async Task<ActionResult<IEnumerable<Caballero>>> GetCaballerosContain(string cadena)
         {
-            var caballeros = await _context.Caballeros.Where(d => d.Type == cadena
-                    || d.Name == cadena
-                    || d.Constellation == cadena
-                    || d.Saga == cadena
-                    || d.Armor == cadena).ToListAsync();
+            var caballeros = await _context.Caballeros.Where(d => d.Type == cadena.ToLower()
+                    || d.Name == cadena.ToLower()
+                    || d.Constellation == cadena.ToLower()
+                    || d.Saga == cadena.ToLower()
+                    || d.Armor == cadena.ToLower()).ToListAsync();
             
             if (caballeros == null)
             {

@@ -13,7 +13,7 @@ export class SaintsSearchComponent implements OnInit {
   formBusqueda: FormGroup;
   ListadoCaballeros: Saints[];
   ListadoCaballeros2;
-  caballerosFiltados: Saints[];
+  caballerosFiltados;
   public campobuscado:string;
   notfound: boolean=false
 
@@ -37,7 +37,8 @@ export class SaintsSearchComponent implements OnInit {
               this.filtrado())
       );
   }
-  BuscarCaballero(){
+  BuscarCaballero(campobuscado:string){
+    console.log(campobuscado)
     //let type:string=Object.assign({},this.formBusqueda.value);
     //console.log(type)
     //this.SaintsSrv.BuscarType(type);
@@ -52,7 +53,8 @@ export class SaintsSearchComponent implements OnInit {
       this.notfound=false
     }*/
    this.ngOnInit()
-   this.ObservableCaballerosLista();
+   //this.ObservableCaballerosLista();
+   this.nuevaBusqueda(campobuscado)
   //  this.caballerosFiltados=this.ListadoCaballeros;
   //  if(this.caballerosFiltados.length<1){
   //   this.notfound=true
@@ -60,14 +62,24 @@ export class SaintsSearchComponent implements OnInit {
   //     this.notfound=false
   //   }
   }
+  nuevaBusqueda(campobuscado:string){
+    this.SaintsSrv.BuscarType2(campobuscado)
+    .subscribe(
+      resultado=>(this.caballerosFiltados=resultado),
+      error => (console.log(error),alert(`Error Code: 0x80070006-9999103 (se cayó el backend)`)),
+      ()=> (console.log("Lista de Caballeros Entregada"),
+            this.filtrado())
+    );
+  }
+
   filtrado(){
     //this.caballerosFiltados=this.ListadoCaballeros;
-    for(let i = 0; i < this.ListadoCaballeros.length; i++) {
-      let individual = this.ListadoCaballeros[i];
-      if(individual.type === this.campobuscado){
-        this.caballerosFiltados.push(individual)
-      }
-    } 
+    // for(let i = 0; i < this.ListadoCaballeros.length; i++) {
+    //   let individual = this.ListadoCaballeros[i];
+    //   if(individual.type === this.campobuscado){
+    //     this.caballerosFiltados.push(individual)
+    //   }
+    // } 
     //console.log(caballerosFiltado)
     if(this.caballerosFiltados.length<1){
     this.notfound=true

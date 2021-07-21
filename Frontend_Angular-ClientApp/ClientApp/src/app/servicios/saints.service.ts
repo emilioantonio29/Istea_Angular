@@ -54,6 +54,9 @@ export class SaintsService {
     console.log(caballerosFiltado)
     return caballerosFiltado
   }
+  BuscarType2(tipo:string){
+    return this.http.get<Saints[]>(`${this.rutaApi}/cadena?cadena=${tipo}`);
+  }
   Eliminar(saintId:number):any{
     /*saintId=+saintId
     this.ListadoCaballeros.forEach((value,index)=>{
